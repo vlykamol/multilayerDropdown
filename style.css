@@ -1,0 +1,93 @@
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://cdn.holidaykeepers.com/wp-content/uploads/2022/08/Home-page-new.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: aliceblue;
+}
+
+.navbar{
+  margin: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mainNav{
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.mainNavLink{
+  position: relative;
+}
+
+.innerList{
+  position: absolute;
+  margin-top: 1rem;
+  padding: 1rem;
+  list-style: none;
+  background-color: white;
+  color: black;
+  border-radius: 4%;
+  display: none;
+  flex-direction: column;
+  width: max-content;
+}
+.active{
+  display: flex;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+span{
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: .2rem;
+}
+
+.authlinks{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.authlinks a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+}
+
+.authlinks a p{
+  color: aliceblue;
+}
+
+.host-btn{
+  padding: .3rem .8rem;
+  color: aliceblue;
+  background-color: #e61e4d;
+  border: none;
+  border-radius: 5px;
+}
