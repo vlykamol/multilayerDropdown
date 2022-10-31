@@ -8,7 +8,6 @@ body{
   background-image: url('https://cdn.holidaykeepers.com/wp-content/uploads/2022/08/Home-page-new.webp');
   background-repeat: no-repeat;
   background-size: cover;
-
   color: aliceblue;
 }
 
@@ -31,23 +30,57 @@ body{
   gap: 0.5rem;
 }
 
+.child li{
+  width: 100%;
+  padding: .5rem 1rem;
+}
+
 .mainNavLink{
   position: relative;
 }
 
-.innerList{
-  position: absolute;
-  margin-top: 1rem;
-  padding: 1rem;
+.child, .child2, .child3{
+  display: none;
   list-style: none;
   background-color: white;
   color: black;
   border-radius: 4%;
-  display: none;
   flex-direction: column;
   width: max-content;
+  position: absolute;
 }
-.active{
+
+li:hover{
+  /* background-color: #e61e4dc2; */
+}
+
+.mainNavLink:hover > .child{
+  display: flex;
+  top: 100%;
+  left: 0%;
+}
+
+.child li:hover{
+  position: relative;
+}
+
+.child2 li:hover{
+  position: relative;
+}
+
+.child li:hover > .child2{
+  display: flex;
+  top: 10%;
+  left: 100%;
+}
+
+.child2 li:hover > .child3{
+  display: flex;
+  top: 10%;
+  left: 100%;
+}
+
+.innerList2 li:hover > .innerList3{
   display: flex;
 }
 
